@@ -10,12 +10,18 @@ var ernesto = {
     edad:26
 }
 
-function imprimiNombreEnMayusculas({nombre}) {
-    console.log(nombre.toLowerCase())
+function imprimiNombreEnMayusculas(persona) {
+    //var nombre = persona.nombre
+    var {nombre} = persona
+    console.log(nombre.toUpperCase())
 }
 
+function imprimirNombreyEdad(persona){
+    var{nombre,edad}= persona
+
+    console.log('Hola me llamo '+ nombre.toUpperCase() +' y tengo '+edad+' años')
+}
 imprimiNombreEnMayusculas(camilo)
 imprimiNombreEnMayusculas(ernesto)
-imprimiNombreEnMayusculas({nombre: 'Pepito'})
-imprimiNombreEnMayusculas()
-
+imprimirNombreyEdad(camilo)
+imprimirNombreyEdad(ernesto)
