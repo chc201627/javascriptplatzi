@@ -23,5 +23,13 @@ function imprimirNombreyEdad(persona){
 }
 imprimiNombreEnMayusculas(camilo)
 imprimiNombreEnMayusculas(ernesto)
-imprimirNombreyEdad(camilo)
-imprimirNombreyEdad(ernesto)
+
+
+function cumpleanos(persona) {
+    return{
+        ...persona,
+        edad:persona.edad += 1
+    }
+}
+
+
